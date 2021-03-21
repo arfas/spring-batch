@@ -2,12 +2,14 @@ package com.MADProductions.MADProductions;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
 public class MadProductionsApplication {
+	@Value("${spring.application.name}")
 
 	public static void main(String[] args) {
 		Logger logger = LoggerFactory.getLogger(MadProductionsApplication.class);
