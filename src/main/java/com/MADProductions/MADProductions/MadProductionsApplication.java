@@ -11,8 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @ComponentScan(basePackages = "com.MADProductions.MADProductions")
-@SpringBootApplication(exclude = {JpaRepositoriesAutoConfiguration.class})
-@EnableJpaRepositories("com.MADProductions.MADProductions.Repository")
+@SpringBootApplication
 public class MadProductionsApplication {
     @Value("${spring.application.name}")
 
