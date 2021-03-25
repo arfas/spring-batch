@@ -13,7 +13,7 @@ import java.util.List;
 
 @Component
 public class DBWriter implements ItemWriter<Details> {
-
+    Logger logger = LoggerFactory.getLogger(DBWriter.class);
     private DetailsRepository userRepository;
 
     @Autowired
@@ -23,7 +23,7 @@ public class DBWriter implements ItemWriter<Details> {
 
     @Override
     public void write(List<? extends Details> users) throws Exception {
-        System.out.println("Data Saved for Users: " + users);
+        logger.info("Data Saved for Users: " + users);
         userRepository.saveAll(users);
     }
 }
