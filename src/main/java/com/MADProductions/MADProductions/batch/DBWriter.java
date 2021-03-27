@@ -1,6 +1,5 @@
 package com.MADProductions.MADProductions.batch;
 
-import com.MADProductions.MADProductions.MadProductionsApplication;
 import com.MADProductions.MADProductions.Repository.DetailsRepository;
 import com.MADProductions.MADProductions.model.Details;
 import org.slf4j.Logger;
